@@ -1,0 +1,26 @@
+#######
+SSTRANSLATE is a code to convert the POSCAR, XYZ and SIESTA OUT_STRUCT in sctructure input to use in SIESTA
+
+######
+- Code: write in python 3.
+- necessary library: numpy
+- the first line is the location of the python library. Verify the path
+- verify the permission to execute
+#####
+How to use:
+
+sstranslate.x  FILE -fm [xyz,poscar,siesta]
+
+use:
+-> xyz to format XYZ
+-> poscar to format POSCAR
+-> siesta to format SIESTA
+
+Output:
+The code will be create a file structure.fdf 
+
+Example:
+
+sstranslate.x ja9b06398_si_002.vasp -fm poscar
+
+the examples are in the folder tests 
